@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace DisplayInfo
-{
+{C:\Users\Yukster\source\repos\github-practice-leokon88\DisplayInfo\Program.cs
     class Program
     {
         static void Main(string[] args)
@@ -11,7 +11,7 @@ namespace DisplayInfo
             Console.WriteLine("What is your first name?");// Get first name from user input
             string firstName = Console.ReadLine();
             Console.WriteLine("What is your last name?");// Get last name from user input
-            string firstName = Console.ReadLine();
+            string lastName = Console.ReadLine();
 
             Console.WriteLine("What is your favorite number?");//Get their favorite number
             int favNumber = int.Parse(Console.ReadLine());
