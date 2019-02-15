@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace DisplayInfo
-{C:\Users\Yukster\source\repos\github-practice-leokon88\DisplayInfo\Program.cs
+{ 
     class Program
     {
         static void Main(string[] args)
@@ -15,6 +15,15 @@ namespace DisplayInfo
 
             Console.WriteLine("What is your favorite number?");//Get their favorite number
             int favNumber = int.Parse(Console.ReadLine());
+            if (favNumber > 10)
+            {
+                favNumber.Console.ForegroundColor = ConsoleColor.Green;
+                Console.Clear();
+            }
+            //else if (favNumber < 5)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //}
 
             Console.WriteLine("What is your favorite animal?");// Get their favorite animal
             string favAnimal = Console.ReadLine();
@@ -22,11 +31,11 @@ namespace DisplayInfo
             // Once you have gotten all their info and stored it,
             // display it back to them.
             
-
-            Console.WriteLine($"{firstName} {lastName}'s favorite number is {favNumber} and the favorite animal is {favAnimal}" );
+             Console.WriteLine($"{firstName} {lastName}'s favorite number is {favNumber} and the favorite animal is {favAnimal}" );
 
             // If their favorite number is greater than 10, display it in green.
             // If their favorite number is less than 5, display it in red.
+
         }
     }
 }
